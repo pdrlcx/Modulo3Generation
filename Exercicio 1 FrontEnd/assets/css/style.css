@@ -1,0 +1,75 @@
+    /*Estilo da pagina index.html
+    <p id="p1"> Dando um id para trabalhar apenas com esse paragrafo -->
+    <!-- <p class="p1"> texto </p> chama .p1 pra estilizar -- Especifica uma classe, tb consigo estilizar assim como id, a diferença é que posso usar a classe quantas vezes quiser, e o id apenas uma vez-->
+    <!-- <p style="font-size: 20px ;"> //Estilizando tamanho da fonte desse paragrafo em especifico -->*/
+
+    /*Centralizando o texto do paragrafo <p class="center"> poderia ser com #p1 também*/
+    .center {
+        text-align: center;
+    }
+
+    .justify {
+        text-align: justify;
+    }
+    
+    .container {
+        display: flex;
+        flex-flow: row; /*row deixa o texto um do lado do outro, row wrap quebra texto pra baixo*/
+        justify-content: center; /*flex-start deixa do lado esquerdo, flex-end deixa do lado direito*/
+        align-items: center; /*centraliza o texto com a imagem-- alinhamento vertical*/
+    }
+
+/*Estilizando menu na horizontal*/
+#menu li {
+    display: inline; /*alinha na horizontal o campo de direcionamento de pagina*/
+    padding: 30px; /*da espaçamento entre as opçoes -- ou usa o 'margin' */
+}
+
+/*Estilizando menu*/
+#menu li a {
+text-decoration: none; /*muda o aspecto de link para um caminho comum*/
+color: rgb(148, 126, 148); /*muda a cor da palavra*/
+font-size: 20px; /*tamanho da fonte*/
+}
+
+/*Estilizando menu para quando colocar o mouse em cima, mudar de cor*/
+#menu li a:hover {
+    color: gray /*quando o mouse esta em cima fica dessa cor*/
+}
+
+/*Estilizando cor de fundo do site*/
+body {
+    background: #151313;
+    color: #fcfcfc;
+}
+
+/*Estilizando espaçamento, margem do menu, eapaço ao redor da palavra*/
+nav {
+    padding: 0,5rem;
+    display: flex;
+    }
+
+/*Estilizando o texto*/
+.textGeral {
+    padding: 20px; /*deixa o texto com borda, ou seja, não fica grudado na img ou no canto*/
+}
+
+.imagem { /*Ajustando imagem do proprietario*/
+width: 260px; /*altura da imagem*/
+height: 260px; /*largura da imagem*/
+border-radius: 50px 80px; /*arredonda a imagem*/
+border: 2px solid #7c687b;
+margin: auto;
+}
+
+/*
+.imagem:hover {
+    transform: rotateY(180deg);
+    }
+*/
+.wh-social { /*Ajustando imagem de redes sociais*/
+    width: 50px; /*altura da imagem*/
+    height: 50px; /*largura da imagem*/
+    padding: 30px; /*da espaçamento entre as opçoes/*
+
+}
